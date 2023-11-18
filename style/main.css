@@ -1,0 +1,21 @@
+/* IMPORT FONT STYLE */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,500;0,700;1,500;1,700&display=swap');
+
+/* DECLARE VARIABLE */
+:root {
+  --galactic-blue: hsla(252, 66%, 62%, 1);
+  --summer-yellow: hsla(28, 89%, 67%, 1);
+  --light-pink: hsla(0, 79%, 79%, 1);
+  --light-red: hsla(7, 77%, 66%, 1);
+  --cyan: hsla(172, 46%, 57%, 1);
+  --black: hsla(0, 0%, 1%, 1);
+  --light-cream: hsla(30, 100%, 97%, 1);
+  --medium-brown: hsla(30, 5%, 45%, 1);
+  --purple: hsla(314, 46%, 23%, 1);
+
+  --ff: 'Plus Jakarta Sans', san-serif;
+
+  --fw-bold: 700;
+  --fw-semi-bold: 500;
+}
+
