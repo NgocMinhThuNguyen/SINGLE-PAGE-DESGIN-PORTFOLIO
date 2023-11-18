@@ -50,3 +50,11 @@ body {
   border-radius:1.75rem;
   border-color: transparent;
 }
+
+.text {
+  font-size: 1rem;
+  font-weight: var(--fw-semi-bold);
+  line-height: 1.625rem;
+
+  color: var(--medium-brown);
+}
