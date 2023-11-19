@@ -34,6 +34,19 @@ body {
   font-family: var(--ff);
 }
 
+.text {
+  font-size: 1rem;
+  font-weight: var(--fw-semi-bold);
+  line-height: 1.625rem;
+
+  color: var(--medium-brown);
+}
+
+.medium-heading {
+  font-size: 1.625rem;
+  font-weight: 700
+}
+
 .call-to-action {
   display: flex;
   justify-content: center;
@@ -64,18 +77,4 @@ body {
   background-color: var(--summer-yellow);
   cursor: pointer;
 }
-
-.text {
-  font-size: 1rem;
-  font-weight: var(--fw-semi-bold);
-  line-height: 1.625rem;
-
-  color: var(--medium-brown);
-}
-
-.medium-heading {
-  font-size: 1.625rem;
-  font-weight: 700
-}
-
 
