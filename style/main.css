@@ -96,3 +96,53 @@ header {
 
   margin-bottom: 2rem;
 }
+
+figure {
+  border-radius: .5rem;
+}
+
+.graphic-collection {
+  min-height: 74.25rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 2fr repeat(4, 1fr);
+  column-gap: 1.5625rem;
+  row-gap: 1.5rem;
+  grid-template-areas: 
+    "graphic-design  graphic-design"
+    "ui-ux           apps"
+    "illustrations    illustrations"
+    "photography     photography"
+    "motion-graphics motion-graphics";
+}
+
+.graphic-design {
+  grid-area: graphic-design;
+  background-color: var(--galactic-blue);
+}
+
+.ui-ux {
+  grid-area: ui-ux;
+  background-color: var(--summer-yellow);
+}
+
+.apps {
+  grid-area: apps;
+  background-color: var(--light-pink);
+}
+
+.illustrations {
+  grid-area: illustrations;
+  background-color: var(--light-red);
+}
+
+.photography {
+  grid-area: photography;
+  background-color: var(--cyan);
+}
+
+.motion-graphics {
+  grid-area: motion-graphics;
+  background-color: var(--purple);
+}
