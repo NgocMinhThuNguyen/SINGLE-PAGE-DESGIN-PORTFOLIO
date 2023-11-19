@@ -32,6 +32,8 @@ html {
 body {
   min-height: 100vh;
   font-family: var(--ff);
+
+  padding: 1rem;
 }
 
 .text {
@@ -59,7 +61,9 @@ body {
 
   background-color: var(--black);
   min-width: 11rem;
+  max-width: 14.25rem;
   min-height: 2.75rem;
+  max-height: 3.5rem;
   border-radius:1.75rem;
   border-color: transparent;
 }
