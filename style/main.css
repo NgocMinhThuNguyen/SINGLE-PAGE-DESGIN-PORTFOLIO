@@ -97,10 +97,7 @@ header {
   margin-bottom: 2rem;
 }
 
-figure {
-  border-radius: .5rem;
-}
-
+/* GRAPHIC COLLECTION */
 .graphic-collection {
   min-height: 74.25rem;
 
@@ -115,6 +112,11 @@ figure {
     "illustrations    illustrations"
     "photography     photography"
     "motion-graphics motion-graphics";
+}
+
+figure {
+  border-radius: .5rem;
+  position: relative;
 }
 
 .graphic-design {
@@ -145,4 +147,18 @@ figure {
 .motion-graphics {
   grid-area: motion-graphics;
   background-color: var(--purple);
+}
+
+.graphic-collection img {
+  /* margin-top: 1.5rem; */
+  /* margin-right: 1.5rem; */
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.graphic-collection figcaption {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
 }
