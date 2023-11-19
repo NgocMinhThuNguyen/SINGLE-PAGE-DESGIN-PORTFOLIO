@@ -12,6 +12,7 @@
   --light-cream: hsla(30, 100%, 97%, 1);
   --medium-brown: hsla(30, 5%, 45%, 1);
   --purple: hsla(314, 46%, 23%, 1);
+  --white: hsl(0, 0%, 100%);
 
   --ff: 'Plus Jakarta Sans', san-serif;
 
@@ -150,15 +151,17 @@ figure {
 }
 
 .graphic-collection img {
-  /* margin-top: 1.5rem; */
-  /* margin-right: 1.5rem; */
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
 }
 
-.graphic-collection figcaption {
+.category {
   position: absolute;
   bottom: 1.5rem;
   left: 1.5rem;
+
+  font-size: 1.5rem;
+  font-weight: var(--fw-bold);
+  color: var(--white); 
 }
