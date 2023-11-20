@@ -197,13 +197,37 @@ img.avatar {
 .small-heading {
   font-style: 1.5rem;
   font-weight: 700;
-
   text-align: center;
+
+  margin-bottom: 2rem;
+}
+
+.gallery {
+  min-width: 100vw;
+
+  position: relative;
+  left: -1rem;
+  overflow: hidden;
+}
+
+.gallery-img {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: .9375rem;
+  
+  position: relative;
+  right: 105%;
+}
+
+.gallery-img img {
+  width: 60%;
+  border-radius: .625rem;
 }
 
 .arrows {
   min-width: 9rem;
   min-height: 4rem;
+  margin-top: 2rem;
 
   display: flex;
   justify-content: center;
