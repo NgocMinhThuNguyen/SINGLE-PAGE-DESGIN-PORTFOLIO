@@ -107,10 +107,15 @@ header {
   margin-bottom: 2rem;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 6.25rem;
+}
+
 /* GRAPHIC COLLECTION */
 .graphic-collection {
   min-height: 74.25rem;
-  margin-bottom: 6.25rem;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -186,3 +191,35 @@ img.avatar {
   width: 100%;
 }
 
+/* GALLERY */
+.small-heading {
+  font-style: 1.5rem;
+  font-weight: 700;
+
+  text-align: center;
+}
+
+.arrows {
+  min-width: 9rem;
+  min-height: 4rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 4rem;
+  border-radius: 50%;
+
+  background-color: var(--black);
+}
+
+.arrow-container:hover {
+  background-color: var(--galactic-blue);
+  cursor: pointer;
+}
