@@ -111,6 +111,8 @@ main {
   display: flex;
   flex-direction: column;
   gap: 6.25rem;
+
+  margin-bottom: 2.5rem;
 }
 
 /* GRAPHIC COLLECTION */
@@ -222,4 +224,23 @@ img.avatar {
 .arrow-container:hover {
   background-color: var(--galactic-blue);
   cursor: pointer;
+}
+
+/* BOOKING */
+.booking {
+  padding: 3.0625rem 1.5rem;
+  border-radius: .625rem;
+
+  background-color: var(--black);
+  color: var(--light-cream);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--galactic-blue);
 }
