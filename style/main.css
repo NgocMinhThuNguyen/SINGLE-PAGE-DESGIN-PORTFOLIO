@@ -357,8 +357,13 @@ footer a {
   .booking {
     padding: 4.6875rem;
   }
+
   .booking, .booking-content {
     gap: 1.625rem;
+  }
+
+  .booking-content .text {
+    color: var(--light-cream);
   }
 }
 
@@ -441,5 +446,16 @@ footer a {
 
   .gallery {
     margin-left: -8rem;
+  }
+
+  .booking {
+    flex-direction: row;
+    padding: 5.0625rem 4.0625rem;
+    gap: 20%;
+  }
+
+  .booking-content {
+    align-items: flex-start;
+    text-align: left;
   }
 }
