@@ -38,6 +38,10 @@ body {
   background-color: var(--light-cream);
 }
 
+.large-heading {
+  font-size: 2.25rem
+}
+
 .text {
   font-size: 1rem;
   font-weight: var(--fw-semi-bold);
@@ -63,10 +67,8 @@ body {
 
   background-color: var(--black);
   min-width: 11rem;
-  max-width: 14.25rem;
   min-height: 2.75rem;
-  max-height: 3.5rem;
-  border-radius:1.75rem;
+  border-radius: 1.75rem;
   border-color: transparent;
 }
 
@@ -277,6 +279,14 @@ footer a {
 
   .call-to-action {
     font-size: 1rem;
+
+    min-width: 14.25rem;
+    min-height: 3.5rem;
+  }
+
+  .large-heading {
+    font-size: 2.75rem;
+    margin-bottom: 1.6875rem;
   }
 
   .text {
@@ -286,6 +296,19 @@ footer a {
 
   .medium-heading {
     font-size: 2rem;
+  }
+
+  nav, header {
+    margin-bottom: 4rem;
+  }
+
+  header p{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  main {
+    gap: 7.5rem;
   }
 
   /* GRAPHIC COLLECTION */
@@ -324,6 +347,10 @@ footer a {
     left: -2.5rem;
   }
 
+  .small-heading {
+    font-size: 2rem;
+  }
+
   /* BOOKING */
   .booking {
     padding: 4.6875rem;
@@ -337,6 +364,28 @@ footer a {
   body {
     padding-left: 10.3125rem;
     padding-right: 10.3125rem;
+  }
+
+  .large-heading {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .medium-heading {
+    font-size: 2.5rem;
+  }
+
+  nav, header {
+    margin-bottom: 4.125rem;
+  }
+
+  header p {
+    padding-left: 4.125rem;
+    padding-right: 4.125rem;
+  }
+
+  main {
+    gap: 8.5rem;
   }
 
   .graphic-collection {
