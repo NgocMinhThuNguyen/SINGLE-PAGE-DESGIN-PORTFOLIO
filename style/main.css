@@ -268,3 +268,17 @@ footer a {
   text-decoration: none;
   color: var(--galactic-blue);
 }
+
+@media (min-width: 48rem) {
+  /* GRAPHIC COLLECTION */
+  .graphic-collection {
+    min-height: 35.625rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1.5rem;
+    grid-template-areas: 
+      "graphic-design graphic-design  ui-ux            apps"
+      "graphic-design graphic-design  illustrations     illustrations"
+      "photography     photography     motion-graphics motion-graphics"
+  }
+}
