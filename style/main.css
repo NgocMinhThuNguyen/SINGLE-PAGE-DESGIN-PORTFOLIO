@@ -287,6 +287,7 @@ footer a {
   .medium-heading {
     font-size: 2rem;
   }
+
   /* GRAPHIC COLLECTION */
   .graphic-collection {
     min-height: 35.625rem;
@@ -297,5 +298,24 @@ footer a {
       "graphic-design graphic-design  ui-ux            apps"
       "graphic-design graphic-design  illustrations     illustrations"
       "photography     photography     motion-graphics motion-graphics"
+  }
+
+  /* AUTHOR */ 
+  .author-intro {
+    flex-direction: row;
+  }
+
+  div.avatar {
+    margin-bottom: 0;
+    flex-basis: 50%;
+
+    position: relative;
+    left: -12%;
+  }
+
+  .author-text {
+    align-items: flex-start;
+    text-align: left;
+    flex-basis: 50%;
   }
 }
