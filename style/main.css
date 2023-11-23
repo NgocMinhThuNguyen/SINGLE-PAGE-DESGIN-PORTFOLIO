@@ -318,4 +318,9 @@ footer a {
     text-align: left;
     flex-basis: 50%;
   }
+
+  /* GALLERY */
+  .gallery {
+    left: -2.5rem;
+  }
 }
