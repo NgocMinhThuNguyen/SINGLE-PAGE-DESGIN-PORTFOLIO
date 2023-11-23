@@ -270,6 +270,23 @@ footer a {
 }
 
 @media (min-width: 48rem) {
+  /* BODY */ 
+  body {
+    padding: 2.5rem;
+  }
+
+  .call-to-action {
+    font-size: 1rem;
+  }
+
+  .text {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .medium-heading {
+    font-size: 2rem;
+  }
   /* GRAPHIC COLLECTION */
   .graphic-collection {
     min-height: 35.625rem;
