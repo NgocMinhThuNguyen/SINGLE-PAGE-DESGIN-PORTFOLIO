@@ -215,10 +215,11 @@ img.avatar {
 .gallery-img {
   display: flex;
   flex-wrap: nowrap;
+  justify-content: center;
   gap: .9375rem;
   
   position: relative;
-  right: 105%;
+  /* right: 105%; */
 }
 
 .gallery-img img {
@@ -233,7 +234,7 @@ img.avatar {
 
   display: flex;
   justify-content: center;
-  gap: 5%;
+  gap: 2%;
 }
 
 .arrow-container {
@@ -424,4 +425,20 @@ footer a {
     grid-row: 2/3;
   }
 
+  .author-intro {
+    gap: 11%
+  }
+
+  div.avatar {
+    position: initial;
+    flex-basis: 40%;
+  }
+
+  .author-text {
+    flex-basis: 49%;
+  }
+
+  .gallery {
+    margin-left: -8rem;
+  }
 }
