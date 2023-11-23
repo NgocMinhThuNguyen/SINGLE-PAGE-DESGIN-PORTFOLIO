@@ -323,4 +323,12 @@ footer a {
   .gallery {
     left: -2.5rem;
   }
+
+  /* BOOKING */
+  .booking {
+    padding: 4.6875rem;
+  }
+  .booking, .booking-content {
+    gap: 1.625rem;
+  }
 }
