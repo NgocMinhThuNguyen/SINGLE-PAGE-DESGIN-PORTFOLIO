@@ -55,6 +55,11 @@ body {
   font-weight: 700
 }
 
+a {
+  text-decoration: none;
+  color: var(--light-cream);
+}
+
 .call-to-action {
   display: flex;
   justify-content: center;
@@ -63,7 +68,6 @@ body {
   font-size: .875rem;
   font-weight: var(--fw-bold);
   line-height: 1.75rem;
-  color: var(--light-cream);
 
   background-color: var(--black);
   min-width: 11rem;
@@ -268,7 +272,7 @@ footer {
   text-align: center;
 }
 
-footer a {
+.copyright {
   text-decoration: none;
   color: var(--galactic-blue);
 }
