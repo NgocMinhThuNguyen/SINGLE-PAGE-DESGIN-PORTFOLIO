@@ -26,10 +26,6 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 16px;
-}
-
 body {
   min-height: 100vh;
   font-family: var(--ff);
@@ -55,11 +51,6 @@ body {
   font-weight: 700
 }
 
-a {
-  text-decoration: none;
-  color: var(--light-cream);
-}
-
 .call-to-action {
   display: flex;
   justify-content: center;
@@ -68,6 +59,7 @@ a {
   font-size: .875rem;
   font-weight: var(--fw-bold);
   line-height: 1.75rem;
+  color: var(--light-cream);
 
   background-color: var(--black);
   min-width: 11rem;
@@ -224,7 +216,6 @@ img.avatar {
   gap: .9375rem;
   
   position: relative;
-  /* right: 105%; */
 }
 
 .gallery-img img {
