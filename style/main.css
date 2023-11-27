@@ -1,7 +1,11 @@
-/* IMPORT FONT STYLE */
+/*-------------------- 
+ ** IMPORT FONT STYLE */
+
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,500;0,700;1,500;1,700&display=swap');
 
-/* DECLARE VARIABLE */
+/*-------------------
+ ** DECLARE VARIABLE */
+
 :root {
   --galactic-blue: hsla(252, 66%, 62%, 1);
   --summer-yellow: hsla(28, 89%, 67%, 1);
@@ -20,6 +24,9 @@
   --fw-semi-bold: 500;
 }
 
+/*---------------- 
+ **GENERL SET UP */
+
 * {
   margin: 0;
   padding: 0;
@@ -29,9 +36,23 @@
 body {
   min-height: 100vh;
   font-family: var(--ff);
+  text-align: center;
 
   padding: 1rem;
   background-color: var(--light-cream);
+}
+
+a {
+  text-decoration: none;
+  color: var(--white); 
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
 }
 
 .large-heading {
@@ -87,40 +108,35 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
-
-  text-align: center;
 }
 
-/* NAV */
-nav {
-  display: flex;
+.flex-row {
+  flex-direction: row;
+}
+
+/*----------------
+ ** DESIGN LAYOUT */
+
+.header {
   justify-content: space-between;
-  align-items: center;
 
   margin-bottom: 2rem;
 }
 
-header {
-  text-align: center;
-
-  margin-bottom: 2rem;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 6.25rem;
-
+main.flex-layout {
+  gap: 2rem;
   margin-bottom: 2.5rem;
 }
 
 /* GRAPHIC COLLECTION */
 .graphic-collection {
-  min-height: 74.25rem;
+  min-width: 100%;
+  margin-bottom: 4.25rem;
+}
 
+.graphic-collection ul{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 2fr repeat(4, 1fr);
   column-gap: 1.5625rem;
   row-gap: 1.5rem;
   grid-template-areas: 
@@ -129,11 +145,6 @@ main {
     "illustrations    illustrations"
     "photography     photography"
     "motion-graphics motion-graphics";
-}
-
-figure {
-  border-radius: .5rem;
-  position: relative;
 }
 
 .graphic-design {
@@ -166,29 +177,40 @@ figure {
   background-color: var(--purple);
 }
 
-.graphic-collection img {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
+.graphic-collection li {
+  border-radius: .5rem;
+  /* padding: 1.5rem; */
 }
 
 .category {
-  position: absolute;
-  bottom: 1.5rem;
-  left: 1.5rem;
-
+  width: 100%;
+  padding: 1.5rem;
+  
   font-size: 1.5rem;
   font-weight: var(--fw-bold);
-  color: var(--white); 
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.5rem;
 }
 
+.category img {
+  align-self: flex-end;
+}
+
+
 /* AUTHOR */
-div.avatar {
+.author-intro {
+  margin-bottom: 4.25rem;
+}
+
+.avatar {
   width: 88%;
   margin-bottom: 1rem;
 }
 
-img.avatar {
+.avatar img{
   width: 100%;
 }
 
@@ -295,11 +317,11 @@ footer {
     font-size: 2rem;
   }
 
-  nav, header {
+  header, .heading {
     margin-bottom: 4rem;
   }
 
-  header p{
+  .heading p{
     padding-left: 4rem;
     padding-right: 4rem;
   }
@@ -309,10 +331,8 @@ footer {
   }
 
   /* GRAPHIC COLLECTION */
-  .graphic-collection {
-    min-height: 35.625rem;
+  .graphic-collection ul {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
     gap: 1.5rem;
     grid-template-areas: 
       "graphic-design graphic-design  ui-ux            apps"
@@ -320,12 +340,16 @@ footer {
       "photography     photography     motion-graphics motion-graphics"
   }
 
+  .graphic-design .category {
+    gap: 7.5rem;
+  }
+
   /* AUTHOR */ 
   .author-intro {
     flex-direction: row;
   }
 
-  div.avatar {
+  .avatar {
     margin-bottom: 0;
     flex-basis: 50%;
 
@@ -362,7 +386,7 @@ footer {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 90rem) {
   body {
     padding-left: 10.3125rem;
     padding-right: 10.3125rem;
@@ -386,14 +410,16 @@ footer {
     padding-right: 4.125rem;
   }
 
-  main {
-    gap: 8.5rem;
+  main.flex-box {
+    gap: 2rem;
   }
 
   .graphic-collection {
-    min-height: 22.75rem;
+    margin-bottom: 6.5rem;
+  }
+
+  .graphic-collection ul{
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
   }
 
   .graphic-design {
@@ -430,8 +456,8 @@ footer {
     gap: 11%
   }
 
-  div.avatar {
-    position: initial;
+  .avatar {
+    position: static;
     flex-basis: 40%;
   }
 
