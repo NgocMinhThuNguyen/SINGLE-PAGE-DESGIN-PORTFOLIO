@@ -6,6 +6,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
   <link rel="stylesheet" href="style/main.css">
   <script src="script.js" defer></script>
   
@@ -69,26 +71,40 @@
       </div>
     </section>
 
-    <section class="gallery">
-      <figure>
-        <figcaption class="small-heading">My Work</figcaption>
-      
-        <div class="gallery-img">
-          <img src="assets/image-slide-1.jpg" alt="" class="slides">
-          <img src="assets/image-slide-2.jpg" alt="" class="slides">
-          <img src="assets/image-slide-3.jpg" alt="" class="slides">
-          <img src="assets/image-slide-4.jpg" alt="" class="slides">
-          <img src="assets/image-slide-5.jpg" alt="" class="slides">
-        </div>
-      </figure>
+    <section class="gallery" aria-label="Ms.Amy work's gallery">
+      <h3 class="small-heading">My Work</h3>
 
-      <div class="arrows">
-        <div class="arrow-container left-arrow">
-          <img src="assets/icon-arrow-left.svg" alt="Left Arrow">
+      <div class="slide-container" role="region"  aria-roledescription="carousel">
+        <p class="sr-only">Below is the gallery of Ms.Amy work</p>
+        <div class="slide-item" role="group" aria-hidden="true" aria-label="Image 1 of 5">
+          <img src="assets/image-slide-1.jpg" alt="Creative snowflake drifting across a blue backdrop" class="slides">
         </div>
-        <div class="arrow-container right-arrow">
-          <img src="assets/icon-arrow-right.svg" alt="Right Arrow"></div>
+        <div class="slide-item" role="group" aria-hidden="true" aria-label="Image 2 of 5">
+          <img src="assets/image-slide-2.jpg" alt="Some special patterns on purple background" class="slides">
+        </div>
+        <div class="slide-item" role="group" aria-hidden="true" aria-label="Image 3 of 5">
+          <img src="assets/image-slide-3.jpg" alt="A newspaper with colorful patterns" class="slides">
+        </div>
+        <div class="slide-item" role="group" aria-hidden="true" aria-label="Image 4 of 5">
+          <img src="assets/image-slide-4.jpg" alt="A book named Graphic design solution stacked on vinyl records" class="slides">
+        </div>
+        <div class="slide-item" role="group" aria-hidden="true" aria-label="Image 5 of 5">
+          <img src="assets/image-slide-5.jpg" alt="An iPhone displaying a website" class="slides">
+        </div>
       </div>
+
+      <div class="silde-controls" role="region" aria-roledescription="Carousel controls">
+        <p class="sr-only">You can use the previous and next button to navigate the gallery</p>
+        <button class="left-arrow" aria-label="Previous Image">
+          <img src="assets/icon-arrow-left.svg" alt="">
+        </button>
+
+        <button class="right-arrow" aria-label="Next Image">
+          <img src="assets/icon-arrow-right.svg" alt="">
+        </button>
+      </div>
+
+
     </section>
 
     <section class="booking flex-layout">
